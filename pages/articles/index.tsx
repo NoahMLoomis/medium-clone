@@ -2,7 +2,7 @@ import { createServerSupabaseClient } from "@supabase/auth-helpers-nextjs";
 import { GetServerSidePropsContext } from "next";
 import Article from "../../components/Article";
 
-const ViewArticles = ({ articles }: { articles: Article[] }) => {
+const ViewArticles = ({ articles }: { articles: IArticle[] }) => {
   return (
     <div className="flex-1">
       {articles.map((d) => (

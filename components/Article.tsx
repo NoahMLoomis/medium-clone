@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Article = ({ data }: { data: Article }) => {
+const Article = ({ data }: { data: IArticle }) => {
   const formattedDate = new Date(data.inserted_at).toISOString().split("T")[0];
 
   return (
