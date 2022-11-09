@@ -17,17 +17,6 @@ export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
   const { data: articles } = await supabase
     .from("articles")
     .select("title, content, user_email, inserted_at, id");
-  const {
-    data: { session },
-  } = await supabase.auth.getSession();
-
-  if (!session)
-    return {
-      redirect: {
-        destination: "/login",
-        permanent: false,
-      },
-    };
 
   return {
     props: {

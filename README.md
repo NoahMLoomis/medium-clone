@@ -5,7 +5,7 @@ This is a blog clone (medium ish), made to practice Next, and a few other techno
 A user can:
 - Create an account
 - Sign In/Out
- - View/Write blog posts
+ - View/Write blog posts (User must be signed in to create blog posts)
 
 
 ## Getting Started
