@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import { useState } from "react";
 import { useUser, useSupabaseClient } from "@supabase/auth-helpers-react";
 import { useRouter } from "next/router";
 import Link from "next/link";
@@ -38,10 +38,13 @@ const Navbar = () => {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-slate-600 rounded-box w-52"
           >
             <li>
-              <Link href="/articles">View Articles</Link>
+              <Link href="/articles/create">Create Articles</Link>
             </li>
             <li>
-              <Link href="/articles/create">Create Articles</Link>
+              <Link href="/articles">View all Articles</Link>
+            </li>
+            <li>
+              <Link href="/articles/mine">View my Articles</Link>
             </li>
           </ul>
         </div>
